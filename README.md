@@ -20,23 +20,4 @@ diversity (Div) into one score. The type (Inter-/Intra-Domain) is read from the 
 | `docs/` | annotation guidelines and benchmark notes |
 | `archive/` | earlier files that are **not** part of the paper |
 
-## Reproduce
-```bash
-./reproduce.sh
-```
-| Paper element | Script | Output |
-|---|---|---|
-| Table 1 (grouped split, seed 42) and ten-split column | `experiments/grouped_split.py` | `results/grouped_split_results.csv`, `grouped_split_repeats.csv` |
-| Tuned baselines on the earlier random split | `experiments/tune_baselines.py` | `results/tuned_baselines.csv` |
-| Vocabulary sensitivity (F1 0.721) | `experiments/grouped_split_allvocab.py` | `results/*_allvocab.csv` |
-| Why recall is low (24 / 13 / 29 items) | `experiments/recall_analysis.py` | `results/recall_analysis_log.txt` |
-| Mapping check (10 of 29 senses) | `experiments/evaluate_domain_mapping.py` | `results/domain_mapping_*` |
-| Worked examples | `experiments/worked_examples.py` | `results/worked_examples_log.txt` |
 
-## Important limitations
-* The benchmark was written by the authors and padded with mechanical rewordings. There is **no independent
-  human annotation** and no agreement figure. The annotator columns in `gold_standard_250.csv` are not human
-  annotations and are not used by any script.
-* On the grouped split our score is below tuned baselines (F1 0.59 against 0.79 to 0.85); over ten other grouped
-  splits it is level with them (about 0.85). Type accuracy is below the majority baseline.
-* Results depend on the split; see `docs/benchmark_notes.md`.

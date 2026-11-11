@@ -4,8 +4,6 @@ Code, benchmark and results for the REFSQ 2027 Research Preview
 *Distinguishing Inter- and Intra-Domain Polysemy in Software Requirements:
 Early Lessons from a Sentence-Level Prototype*.
 
-Maintainer: Siba Mishra, C. V. Raman Global University, Bhubaneswar.
-(For the double-blind review copy, run `./make_anonymous.sh`; it removes this line and the git history.)
 
 ## What the prototype does
 For a target word in a requirement sentence it retrieves WordNet 3.0 senses, ranks them by TF-IDF

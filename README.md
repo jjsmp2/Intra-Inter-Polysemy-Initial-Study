@@ -4,13 +4,7 @@ Code, benchmark and results for the REFSQ 2027 Research Preview
 *Distinguishing Inter- and Intra-Domain Polysemy in Software Requirements:
 Early Lessons from a Sentence-Level Prototype*.
 
-
-## What the prototype does
-For a target word in a requirement sentence it retrieves WordNet 3.0 senses, ranks them by TF-IDF
-similarity to the sentence, and combines sense competition (Spread), polysemy (Poly) and domain
-diversity (Div) into one score. The type (Inter-/Intra-Domain) is read from the domains of the two best senses.
-
-## Layout
+## What's Inside
 | Path | Content |
 |---|---|
 | `src/` | `ambiguity_framework.py` (pipeline and score), `domain_glossary.py` (six domains, 36-term glossary), `evaluate.py` (metrics, tuning) |

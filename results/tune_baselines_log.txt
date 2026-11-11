@@ -1,0 +1,26 @@
+75 175
+
+--- Tuning on Development Split (30%, N = 75) ---
+Learned Feature Weights (Logistic Regression on Dev):
+  w_spread (Spread):           0.353
+  w_polysemy (Base Polysemy):  0.392
+  w_diversity (Domain Div):    0.255
+Optimal Threshold on Dev (tau*): 0.39 (Dev F1 = 0.821)
+Proposed (reproduced)        acc 0.743 P 0.905 R 0.705 F1 0.793 type 0.393 tau=0.39
+Polysemy count (tuned)       acc 0.834 P 0.850 R 0.926 F1 0.886 type 0.344 k=3 devF1=0.870
+Polysemy count (k=4 fixed)   acc 0.811 P 0.908 R 0.811 F1 0.857 type 0.295 k=4
+Spread only (tuned)          acc 0.823 P 0.876 R 0.869 F1 0.872 type 0.467 tau=0.15 devF1=0.816
+Spread only (0.55 fixed)     acc 0.760 P 0.900 R 0.738 F1 0.811 type 0.385 tau=0.55
+Classic Lesk (tuned)         acc 0.811 P 0.799 R 0.975 F1 0.878 type 0.369 gap<=3,ov>=1 devF1=0.872
+Classic Lesk (gap<=1 fixed)  acc 0.737 P 0.779 R 0.869 F1 0.822 type 0.328 gap<=1
+
+--- Tuning on Development Split (30%, N = 75) ---
+Learned Feature Weights (Logistic Regression on Dev):
+  w_spread (Spread):           0.352
+  w_polysemy (Base Polysemy):  0.410
+  w_diversity (Domain Div):    0.237
+Optimal Threshold on Dev (tau*): 0.39 (Dev F1 = 0.809)
+Score w/o glossary (tuned)   acc 0.737 P 0.904 R 0.697 F1 0.787 type 0.385 tau=0.39
+All ambiguous                acc 0.697 P 0.697 R 1.000 F1 0.822 type 0.631 
+dev all-ambiguous F1 0.8188976377952756
+dev F1 proposed 0.8210526315789475

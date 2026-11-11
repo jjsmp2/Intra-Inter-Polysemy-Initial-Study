@@ -1,0 +1,47 @@
+======================================================================
+EVALUATING DOMAIN IDENTIFICATION & MAPPING COMPONENT (Review Item 5)
+======================================================================
+
+Overall Domain Mapping Accuracy: 34.48%
+
+Per-Domain Classification Report:
+                  precision    recall  f1-score   support
+
+Finance/Business       0.50      0.67      0.57         3
+         General       0.30      0.27      0.29        11
+      Healthcare       0.25      0.25      0.25         4
+Legal/Regulatory       0.00      0.00      0.00         2
+      Networking       0.00      0.00      0.00         0
+     Software/IT       0.57      0.44      0.50         9
+
+        accuracy                           0.34        29
+       macro avg       0.27      0.27      0.27        29
+    weighted avg       0.38      0.34      0.36        29
+
+----------------------------------------------------------------------
+ANALYSIS OF THE FOUR HISTORICAL INTER-TO-INTRA ERROR TERMS:
+----------------------------------------------------------------------
+[CORRECT] port.n.01 (port): Gold=General, Predicted=General (lexname=noun.location, conf=0.21)
+    Def: a place on a waterway with facilities for loading and unloading ships
+[MISCLASSIFIED] port.n.02 (port): Gold=General, Predicted=Networking (lexname=noun.food, conf=0.07)
+    Def: sweet dark-red dessert wine
+[CORRECT] port.n.03 (port): Gold=Software/IT, Predicted=Software/IT (lexname=noun.artifact, conf=0.221)
+    Def: an interface on a computer to which a device can be connected
+[CORRECT] service.n.01 (service): Gold=General, Predicted=General (lexname=noun.act, conf=0.246)
+    Def: work done by one person or group that benefits another
+[MISCLASSIFIED] service.n.04 (service): Gold=Software/IT, Predicted=Legal/Regulatory (lexname=noun.group, conf=0.123)
+    Def: a service program operating under an operating system
+[MISCLASSIFIED] service.n.07 (service): Gold=Legal/Regulatory, Predicted=General (lexname=noun.person, conf=0.165)
+    Def: the act of delivering a formal notice or writ
+[MISCLASSIFIED] solution.n.01 (solution): Gold=General, Predicted=Healthcare (lexname=noun.substance, conf=0.18)
+    Def: a method or process of solving a problem
+[MISCLASSIFIED] solution.n.02 (solution): Gold=General, Predicted=Healthcare (lexname=noun.communication, conf=0.172)
+    Def: a homogeneous mixture of two or more substances in chemistry
+[MISCLASSIFIED] solution.n.03 (solution): Gold=Software/IT, Predicted=General (lexname=noun.cognition, conf=0.253)
+    Def: a packaged software application or system solving business needs
+[MISCLASSIFIED] system.n.01 (system): Gold=Software/IT, Predicted=General (lexname=noun.artifact, conf=0.18)
+    Def: a group of independent computer hardware and software components
+[MISCLASSIFIED] system.n.02 (system): Gold=Healthcare, Predicted=General (lexname=noun.group, conf=0.246)
+    Def: a group of physiologically or anatomically related organs
+
+Wrote results/domain_mapping_evaluation.csv and results/domain_mapping_report.md

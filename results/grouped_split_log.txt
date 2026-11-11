@@ -1,0 +1,32 @@
+groups 120 items 250
+PRIMARY: dev 77 test 173 overlap words 0
+{'Inter-Domain': 34, 'None': 23, 'Intra-Domain': 20} {'Inter-Domain': 76, 'None': 53, 'Intra-Domain': 44}
+dev groups 36 test groups 84
+Proposed         devF1 0.941 acc 0.572 P 0.871 R 0.450 F1 0.593 type 0.283 tau=0.47; w=(0.343,0.414,0.243)
+Polysemy count   devF1 0.981 acc 0.723 P 0.846 R 0.733 F1 0.786 type 0.267 k=4
+Spread only      devF1 0.926 acc 0.746 P 0.845 R 0.775 F1 0.809 type 0.433 tau=0.15
+Classic Lesk     devF1 0.939 acc 0.763 P 0.758 R 0.967 F1 0.850 type 0.367 g<=3,m>=1
+No glossary      devF1 0.941 acc 0.561 P 0.867 R 0.433 F1 0.578 type 0.267 tau=0.47
+All ambiguous    devF1 0.824 acc 0.694 P 0.694 R 1.000 F1 0.819 type 0.633 
+majority type acc 0.6333333333333333 PR-AUC 0.8660414436784094
+{'accuracy_ci': (np.float64(49.7), np.float64(64.7)), 'precision_ci': (np.float64(77.9), np.float64(95.0)), 'recall_ci': (np.float64(36.0), np.float64(54.4)), 'f1_ci': (np.float64(50.0), np.float64(67.7)), 'type_acc_ci': (np.float64(20.7), np.float64(37.3))}
+proposed tp fp fn tn 54 8 66 45 type 34 120 detected 54
+seed 1 done {'Proposed': 0.825, 'Polysemy count': 0.864, 'Spread only': 0.825, 'Classic Lesk': 0.869, 'No glossary': 0.807, 'All ambiguous': 0.822}
+seed 2 done {'Proposed': 0.827, 'Polysemy count': 0.854, 'Spread only': 0.812, 'Classic Lesk': 0.815, 'No glossary': 0.716, 'All ambiguous': 0.822}
+seed 3 done {'Proposed': 0.824, 'Polysemy count': 0.87, 'Spread only': 0.809, 'Classic Lesk': 0.861, 'No glossary': 0.793, 'All ambiguous': 0.824}
+seed 4 done {'Proposed': 0.893, 'Polysemy count': 0.905, 'Spread only': 0.888, 'Classic Lesk': 0.853, 'No glossary': 0.877, 'All ambiguous': 0.819}
+seed 5 done {'Proposed': 0.841, 'Polysemy count': 0.87, 'Spread only': 0.831, 'Classic Lesk': 0.881, 'No glossary': 0.811, 'All ambiguous': 0.824}
+seed 6 done {'Proposed': 0.864, 'Polysemy count': 0.814, 'Spread only': 0.85, 'Classic Lesk': 0.869, 'No glossary': 0.66, 'All ambiguous': 0.819}
+seed 7 done {'Proposed': 0.858, 'Polysemy count': 0.825, 'Spread only': 0.843, 'Classic Lesk': 0.843, 'No glossary': 0.802, 'All ambiguous': 0.822}
+seed 8 done {'Proposed': 0.854, 'Polysemy count': 0.861, 'Spread only': 0.834, 'Classic Lesk': 0.871, 'No glossary': 0.834, 'All ambiguous': 0.822}
+seed 9 done {'Proposed': 0.851, 'Polysemy count': 0.861, 'Spread only': 0.881, 'Classic Lesk': 0.845, 'No glossary': 0.851, 'All ambiguous': 0.822}
+seed 10 done {'Proposed': 0.838, 'Polysemy count': 0.876, 'Spread only': 0.818, 'Classic Lesk': 0.884, 'No glossary': 0.818, 'All ambiguous': 0.819}
+                   f1          type       
+                 mean    std   mean    std
+method                                    
+All ambiguous   0.822  0.002  0.630  0.006
+Classic Lesk    0.859  0.021  0.340  0.047
+No glossary     0.797  0.064  0.397  0.059
+Polysemy count  0.860  0.026  0.326  0.038
+Proposed        0.848  0.021  0.442  0.024
+Spread only     0.839  0.027  0.440  0.027

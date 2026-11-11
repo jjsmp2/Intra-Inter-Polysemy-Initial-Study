@@ -1,0 +1,30 @@
+synset,word,gold_domain,predicted_domain,confidence,lexname,is_correct,definition
+port.n.01,port,General,General,0.21,noun.location,True,a place on a waterway with facilities for loading and unloading ships
+port.n.02,port,General,Networking,0.07,noun.food,False,sweet dark-red dessert wine
+port.n.03,port,Software/IT,Software/IT,0.221,noun.artifact,True,an interface on a computer to which a device can be connected
+service.n.01,service,General,General,0.246,noun.act,True,work done by one person or group that benefits another
+service.n.04,service,Software/IT,Legal/Regulatory,0.123,noun.group,False,a service program operating under an operating system
+service.n.07,service,Legal/Regulatory,General,0.165,noun.person,False,the act of delivering a formal notice or writ
+record.n.01,record,Software/IT,Software/IT,0.191,noun.communication,True,a document or data structure containing factual information
+record.n.05,record,General,Software/IT,0.188,noun.communication,False,the extreme ranking attained in sports or achievements
+chart.n.01,chart,General,Software/IT,0.156,noun.communication,False,a visual display of information like a graph or table
+chart.n.02,chart,Healthcare,Healthcare,0.151,noun.artifact,True,a medical record documenting a patient's clinical history and care
+order.n.01,order,Software/IT,Legal/Regulatory,0.143,noun.communication,False,logical arrangement or sequence of items
+order.n.02,order,Finance/Business,Finance/Business,0.187,noun.attribute,True,a commercial document requesting supply of goods or services
+order.n.08,order,Healthcare,Finance/Business,0.2,noun.group,False,a physician's formal instruction for a medication or diagnostic test
+solution.n.01,solution,General,Healthcare,0.18,noun.substance,False,a method or process of solving a problem
+solution.n.02,solution,General,Healthcare,0.172,noun.communication,False,a homogeneous mixture of two or more substances in chemistry
+solution.n.03,solution,Software/IT,General,0.253,noun.cognition,False,a packaged software application or system solving business needs
+system.n.01,system,Software/IT,General,0.18,noun.artifact,False,a group of independent computer hardware and software components
+system.n.02,system,Healthcare,General,0.246,noun.group,False,a group of physiologically or anatomically related organs
+key.n.01,key,General,Software/IT,0.171,noun.artifact,False,metal implement used to open a physical lock
+key.n.02,key,Software/IT,Software/IT,0.201,noun.cognition,True,a database column or code that serves as an identifier or decryptor
+table.n.01,table,General,General,0.12,noun.group,True,a piece of furniture having a smooth flat top supported by legs
+table.n.02,table,Software/IT,Software/IT,0.183,noun.artifact,True,an organized set of data elements arranged in rows and columns
+provider.n.01,provider,General,Healthcare,0.183,noun.person,False,someone who provides or supplies a resource
+provider.n.02,provider,Healthcare,General,0.227,noun.person,False,a licensed healthcare professional or medical institution delivering care
+claim.n.01,claim,General,Finance/Business,0.168,noun.communication,False,an assertion that something is true or a factual statement
+claim.n.02,claim,Finance/Business,Finance/Business,0.134,noun.communication,True,a formal request to an insurance company for payment or reimbursement
+policy.n.01,policy,Legal/Regulatory,General,0.262,noun.cognition,False,a plan of action adopted by a government or organization
+policy.n.02,policy,Finance/Business,General,0.186,noun.communication,False,written insurance contract outlining terms of coverage
+policy.n.03,policy,Software/IT,Legal/Regulatory,0.204,noun.communication,False,a programmatic rule governing security access and authorization permissions

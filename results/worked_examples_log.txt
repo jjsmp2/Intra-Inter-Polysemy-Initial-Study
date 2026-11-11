@@ -1,0 +1,22 @@
+tau* = 0.47
+
+GS-161 | review | gold Intra-Domain | S=0.746 spread=0.500 poly=0.80 div=1.0
+   The physician must strictly complete a medication review before prescribing.
+   General            0.000  a new appraisal or evaluation
+   Software/IT        0.000  an essay or article that gives a critical evaluation (as of a book or 
+   Healthcare         0.000  a subsequent examination of a patient for the purpose of monitoring ea
+
+GS-094 | pipeline | gold Inter-Domain | S=0.000 spread=0.000 poly=0.00 div=0.0
+   The utility company shall monitor oil flow velocity across the trans-continental pipeline.
+
+GS-113 | charge | gold Inter-Domain | S=0.996 spread=0.988 poly=1.00 div=1.0
+   The billing department shall post a room charge of $500 to the patient account.
+   Finance/Business   0.242  request for payment of a debt
+   Software/IT        0.236  a quantity of explosive to be set off at one time
+   General            0.222  an impetuous rush toward someone or something
+
+GS-129 | firewall | gold None | S=0.349 spread=0.898 poly=0.10 div=0.0
+   The network administrator shall configure the hardware firewall to drop ICMP echo requests.
+   Software/IT        0.315  (colloquial) the application of maximum thrust
+   Software/IT        0.257  (computing) a security system consisting of a combination of hardware 
+   Software/IT        0.135  a fireproof (or fire-resistant) wall designed to prevent the spread of

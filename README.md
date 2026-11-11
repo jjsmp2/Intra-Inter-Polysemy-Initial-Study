@@ -18,6 +18,5 @@ diversity (Div) into one score. The type (Inter-/Intra-Domain) is read from the 
 | `experiments/` | one script per result of the paper |
 | `results/` | CSV files and logs written by the experiments |
 | `docs/` | annotation guidelines and benchmark notes |
-| `archive/` | earlier files that are **not** part of the paper |
 
 
